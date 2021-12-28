@@ -183,3 +183,48 @@ const sumFromElements = arr.reduce((sum, current) => {
 }, 0);
 // sumFromElements = 15
 ```
+
+---
+
+## Bonus
+
+-   Array.**isArray**(variable) <br>
+    _checks `variable` for being an array, return true/false_
+
+```js
+const a = [1, 2, 3];
+const b = 17;
+Array.isArray(a); // true
+Array.isArray(b); // false
+```
+
+-   **some / every**(fn()) <br>
+    _The function `fn()` is called on each element of the array similar to `map()`. If any/all results are true - return true, otherwise - false_
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const even = (element) => element % 2 === 0;
+arr.some(even); // true
+
+const arr2 = [8, 20, 100, 29, 10, 13];
+const lessThanForty = (element) => element < 40;
+arr2.every(lessThanForty); // false
+```
+
+-   **fill**(value, start, end) <br>
+    _fills the array with repeating `value` from `start` to `end` positiion_
+
+```js
+const arr = ["a", "b", "c", "d"];
+const filledArr = arr.fill("*", 2, 4);
+// filledArr = ['a', 'b', '*', '*']
+```
+
+-   **flat**(depth) <br>
+    _create a new flat array from a multidimensioanl array_
+
+```js
+const arr = [0, 1, 2, [[[3, 4]]]];
+const newArr = arr.flat(2);
+// newArr = [0, 1, 2, [3, 4]]
+```
