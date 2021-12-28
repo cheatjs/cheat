@@ -1,5 +1,7 @@
 # Array methods cheatsheet
 
+---
+
 ## Adding/Removing elements
 
 -   **push**(...items) <br>
@@ -66,6 +68,8 @@ const newArr = arr.slice(1, 4);
 // newArr = [2, 3, 4]
 ```
 
+---
+
 ## Search among elements
 
 -   **indexOf / lastIndexOf**(item, pos) <br>
@@ -106,6 +110,8 @@ const evenArr = arr.filter((item) => {
 }); // evenArr = [2, 4, 6]
 ```
 
+---
+
 ## Iteration of elements
 
 -   **forEach**(func(item, index, array)) <br>
@@ -120,6 +126,8 @@ arr.forEach((item, index, arr) => {
 // 2 1 [1, 2, 3]
 // 3 2 [1, 2, 3]
 ```
+
+---
 
 ## Transform the array
 
