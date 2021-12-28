@@ -1,5 +1,11 @@
 # Array methods cheatsheet
 
+1. [Adding/Removing elements](#addingremoving-elements)
+2. [Search among elements](#search-among-elements)
+3. [Iteration of elements](#iteration-of-elements)
+4. [Transform the array](#transform-the-array)
+5. [Bonus](#bonus)
+
 ---
 
 ## Adding/Removing elements
