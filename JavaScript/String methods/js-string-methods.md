@@ -4,7 +4,7 @@
 
 ## Changing the case
 
--   **toLowerCase / toUpperCase**()
+-   **toLowerCase / toUpperCase**() <br>
 
 ```js
 const str = "Hello";
@@ -16,7 +16,7 @@ const up = str.toUpperCase(); // HELLO
 
 ## Combining strings
 
--   **concat**(...items)
+-   **concat**(...items) <br>
     _Combines two or more strings and returns one string_
 
 ```js
@@ -30,7 +30,7 @@ const newStr = str.concat(" ", str2);
 
 ## Splitting a string
 
--   **split**(separator, limit)
+-   **split**(separator, limit) <br>
 
 _Splits a string into an array by the specified separator, which can be a substring or a regular expression_
 
@@ -42,9 +42,9 @@ arr = ["Just", "some", "text"];
 
 ---
 
-## Repeating a sting
+## Repeating a string
 
--   **repeat**(count)
+-   **repeat**(count) <br>
     _Repeats the string the specified number of times_
 
 ```js
@@ -57,7 +57,7 @@ const newStr = str.repeat(3);
 
 ## Substring search
 
--   **charAt**(index)
+-   **charAt**(index) <br>
     _Returns a character at the specified index_
 
 ```js
@@ -66,7 +66,7 @@ const char = str.charAt(1);
 // char = "e"
 ```
 
--   **includes**(substr, startPositon)
+-   **includes**(substr, startPositon) <br>
     _Checks if the string contains the specified substring and returns true/false_
 
 ```js
@@ -74,7 +74,7 @@ const str = "example@gmail.com";
 str.includes("gmail"); // true
 ```
 
--   **indexOf / lastIndexOf**(substr, startPositon)
+-   **indexOf / lastIndexOf**(substr, startPositon) <br>
     _Returns the index of the first/last substring found, otherwise returns -1_
 
 ```js
@@ -83,7 +83,7 @@ str.indexOf("@"); // 6
 str.lastIndexOf("m"); // 15
 ```
 
--   **endsWith/startsWith**(substr, searchLength)
+-   **endsWith/startsWith**(substr, searchLength) <br>
     _Checks if the string ends/starts with the specified substring and returns true/false_
 
 ```js
@@ -92,7 +92,7 @@ link.startsWith("www"); // true
 link.endsWith(".com"); // true
 ```
 
--   **search**(substr)
+-   **search**(substr) <br>
     _Checks if there is a specified substring or regular expression in the string and returns the index of the beginning of the match_
 
 ```js
@@ -104,7 +104,7 @@ str.search("name"); // 6
 
 ## Extracting a substring
 
--   **slice**(start, end)
+-   **slice**(start, end) <br>
     _Extracts part of the string starting at the `start` position and ending at the `end`-1 position_
 
 ```js
@@ -113,7 +113,7 @@ const substr = str.slice(4); // script
 const substr = str.slice(4, 0); // java
 ```
 
--   **substring**(start, end)
+-   **substring**(start, end) <br>
     _Extracts substring from a string between `start` and `end`. Unlike `slice()`, you can set `start` more than `end`._
 
 ```js
@@ -122,7 +122,7 @@ const substr = str.substring(4); // script
 const substr2 = str.substring(4); // script
 ```
 
--   **substr**(start, length)
+-   **substr**(start, length) <br>
     _Extracts part of a string of a specified `length`. The first parameter can be negative, then the position is determined from the end of the string._
 
 ```js
@@ -135,7 +135,7 @@ const sub2 = str.substr(-6); // script
 
 ## Replacing a substring
 
--   **replace**(substr, newSubstr)
+-   **replace**(substr, newSubstr) <br>
     _Searches for the specified substring (or regular expression) in the string and replaces it with another one_
 
 ```js
@@ -144,7 +144,7 @@ const str2 = str.replace("type", "java");
 // str2 = javascript
 ```
 
--   **replaceAll**(substr, newSubstr)
+-   **replaceAll**(substr, newSubstr) <br>
     _Replaces all found matches with another string or passed function_
 
 ```js
@@ -157,7 +157,7 @@ const str2 = str.replaceAll(" ", "-");
 
 ## Adding characters
 
--   **padStart / padEnd**(strLength, str)
+-   **padStart / padEnd**(strLength, str) <br>
     _Adds padding at the beginning/end of a string until the string reaches the length specified by the first parameter_
 
 ```js
@@ -171,7 +171,7 @@ msg.padEnd(10, "*"); // "hello*****"
 
 ## Removing spaces
 
--   **trim / trimStart / trimEnd**()
+-   **trim / trimStart / trimEnd**() <br>
     _Deletr spaces at both ends of the string, either only at the beginning or only at the end_
 
 ```js
@@ -181,6 +181,23 @@ str.trimStart(); // "hello   "
 str.trimEnd(); // "  hello"
 ```
 
+---
+
 ## Working with ASCII code
 
--
+-   **charCodeAt**(index) <br>
+    _Returns the ASCII code of the character at the specified `index`_
+
+```js
+const str = "AaBbCc";
+str.charCodeAt(); // 65 (because it's "A")
+str.charCodeAt(3); // 98 (because it's "b")
+```
+
+-   **fromCharCode**(...code) <br>
+    _Converts ASCII code to readable characters_
+
+```js
+const str = String.fromCharCode(74, 83);
+// str = "JS"
+```
