@@ -120,7 +120,7 @@ str.search("name"); // 6
 ```js
 const str = "javascript";
 const substr = str.slice(4); // script
-const substr = str.slice(4, 0); // java
+const substr = str.slice(0, 4); // java
 ```
 
 -   **substring**(start, end) <br>
@@ -129,7 +129,7 @@ const substr = str.slice(4, 0); // java
 ```js
 const str = "javascript";
 const substr = str.substring(4); // script
-const substr2 = str.substring(4); // script
+const substr2 = str.substring(4, 0); // script
 ```
 
 -   **substr**(start, length) <br>
