@@ -93,7 +93,7 @@ str.indexOf("@"); // 6
 str.lastIndexOf("m"); // 15
 ```
 
--   **endsWith/startsWith**(substr, searchLength) <br>
+-   **endsWith / startsWith**(substr, searchLength) <br>
     _Checks if the string ends/starts with the specified substring and returns true/false_
 
 ```js
