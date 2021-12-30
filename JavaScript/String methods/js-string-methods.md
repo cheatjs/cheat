@@ -1,5 +1,16 @@
 # String methods cheatsheet
 
+1. [Changing the case](#changing-the-case)
+2. [Combining strings](#combining-strings)
+3. [Splitting a string](#splitting-a-string)
+4. [Repeating a string](#repeating-a-string)
+5. [Substring search](#substring-search)
+6. [Extracting a substring](#extracting-a-substring)
+7. [Replacing a substring](#replacing-a-substring)
+8. [Adding characters](#adding-characters)
+9. [Removing spaces](#removing-spaces)
+10. [Working with ASCII code](#working-with-ascii-code)
+
 ---
 
 ## Changing the case
@@ -31,8 +42,7 @@ const newStr = str.concat(" ", str2);
 ## Splitting a string
 
 -   **split**(separator, limit) <br>
-
-_Splits a string into an array by the specified separator, which can be a substring or a regular expression_
+    _Splits a string into an array by the specified separator, which can be a substring or a regular expression_
 
 ```js
 const str = "Just some text";
