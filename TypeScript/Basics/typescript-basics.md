@@ -61,15 +61,15 @@ const animal: Animal = {
 };
 ```
 
-_You can extending a type_
-
 ```ts
+// extending a type
 type Cat = Animal & {
     color: string;
 };
 ```
 
 ```ts
+// value with 2 types
 type ID = string | number;
 
 const userId: ID = 239053;
