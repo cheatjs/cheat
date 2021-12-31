@@ -160,3 +160,48 @@ interface IService {
 ---
 
 ## Classes
+
+-   **Modifiers** <br>
+
+```ts
+class Example {
+    constructor(a: number, b: number) {
+        this.a = a;
+        this.b = b;
+    }
+
+    /* prevents assignments to the field outside 
+    of the constructor */
+    readonly a: number;
+
+    /* visible only inside classes inherited from 
+    the current class (not from outside) */
+    protected b: number;
+
+    /* visible only inside current class 
+    (not from inherited and outside) */
+    private secret = "hello";
+
+    /* allows access without creating an instance 
+    of the class may be supplemented by modifiers */
+    static sayHello() {
+        console.log("Hello!");
+    }
+}
+```
+
+```ts
+// Extending a class
+class NewExmaple extends Example {
+    constructor(a: number, b: number, c: number) {
+        super(a, b);
+        this.c = c;
+    }
+
+    c: number;
+
+    sayHello(name: string) {
+        console.log(`Hello ${name}`);
+    }
+}
+```
