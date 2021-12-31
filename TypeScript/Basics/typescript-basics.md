@@ -43,3 +43,61 @@ value = [1, 2, "a", "b", true];
 ```
 
 ---
+
+## Custom types and interfaces
+
+-   **Type Aliases**
+    _Good for describing types in simple objects or for variables that may have more than one type._
+
+```ts
+type Animal = {
+    name: string;
+    age: number;
+};
+
+const animal: Animal = {
+    name: "Fluffy",
+    age: 4,
+};
+```
+
+_You can extending a type_
+
+```ts
+type Cat = Animal & {
+    color: string;
+};
+```
+
+```ts
+type ID = string | number;
+
+const userId: ID = 239053;
+const itemId: ID = "A934VL";
+```
+
+-   **Interfaces**
+    _An interface declaration is another way to name an object type. Interfaces support a more convenient extension and are used more often._
+
+```ts
+interface IPerson {
+    firstName: string;
+    lastName?: string; // an optional parameter
+    gender: "female" | "male"; // only certain values
+    isMarried: boolean;
+}
+
+//Extending an interface
+interface IWorker extends IPerson {
+    job: string;
+}
+
+const someone: IWorker = {
+    firstName: "Alex",
+    gender: "male",
+    isMarried: true,
+    job: "engineer",
+};
+```
+
+---
