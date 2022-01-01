@@ -162,6 +162,7 @@ interface IService {
 ## Classes
 
 -   **Modifiers** <br>
+    _Various modifiers allow you to define the scope of variables and methods_
 
 ```ts
 class Example {
@@ -182,16 +183,14 @@ class Example {
     (not from inherited and outside) */
     private secret = "hello";
 
-    /* allows access without creating an instance 
-    of the class may be supplemented by modifiers */
-    static sayHello() {
-        console.log("Hello!");
-    }
+    alert = () => {};
 }
 ```
 
+-   **Extending a class** <br>
+    _Classes can easily be extended by adding new variables/methods. This also supports overriding methods, but in a way that ensures backward compatibility._
+
 ```ts
-// Extending a class
 class NewExmaple extends Example {
     constructor(a: number, b: number, c: number) {
         super(a, b);
@@ -200,8 +199,43 @@ class NewExmaple extends Example {
 
     c: number;
 
-    sayHello(name: string) {
+    alert(name?: string) {
         console.log(`Hello ${name}`);
     }
+}
+```
+
+-   **Abstract classes** <br>
+    _Abstract classes/methods do not allow you to create instances, but only serve for expansion_
+
+```ts
+abstract class Somebody {
+    hello(): void {
+        console.log("Hello!");
+    }
+}
+
+class User extends Somebody {
+    introduce(): void {
+        console.log("I am User!");
+    }
+}
+
+const user = new User();
+user.hello(); // "Hello!"
+```
+
+-   **Interface implementation** <br>
+    _Interfaces can be used to describe classes_
+
+```ts
+interface ITest {
+    value: string;
+    getNumber: () => number;
+}
+
+class Test implements ITest {
+    value = "test";
+    getNumber = () => 7;
 }
 ```
