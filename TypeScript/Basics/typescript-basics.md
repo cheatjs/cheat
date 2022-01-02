@@ -239,3 +239,38 @@ class Test implements ITest {
     getNumber = () => 7;
 }
 ```
+
+---
+
+## Enums
+
+-   **Numeric enums** <br>
+    _Enums allow to define a set of named constants. Numeric enums automatically assign numbers to named constants._
+
+```ts
+enum Roles {
+    user, // Roles.user = 0
+    moderator, // Roles.moderator = 1
+    admin, // Roles.admin = 2
+}
+
+enum Services {
+    GitHub = 10, // Services.Github = 10
+    Google, // Services.Google = 11
+    Amazon, // Services.Amazon = 12
+}
+```
+
+-   **String & mixed enums** <br>
+
+```ts
+enum Bool {
+	yes = "YES",
+	no = "NO"
+}
+
+enum Server {
+    host = "server.com"
+    port = 5432
+}
+```
