@@ -1,5 +1,12 @@
 # TypeScript basics
 
+1. [Basic types](#basic-types)
+2. [Custom types and interfaces](#custom-types-and-interfaces)
+3. [Functions](#functions)
+4. [Classes](#classes)
+5. [Enums](#enums)
+6. [Generics](#generics)
+
 ---
 
 ## Basic types
