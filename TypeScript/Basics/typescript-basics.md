@@ -118,10 +118,10 @@ const square = (x: number): number => x * x;
 ```
 
 -   **Default arguments** <br>
-    _When default parameters are specified, their types are automatically determined by the set values_
+    _When default parameters are specified, their types are automatically determined by the passed values_
 
 ```ts
-function getNumbers(max = 99, min = 0): void {}
+function getNumbers(max: number = 99, min = 1): void {}
 ```
 
 -   **Optional arguments** <br>
@@ -272,5 +272,66 @@ enum Bool {
 enum Server {
     host = "server.com"
     port = 5432
+}
+```
+
+---
+
+## Generics
+
+-   **Basic usage** <br>
+    _Generics allows to create a component that can work over a variety of types rather than a single one_
+
+```ts
+function test<T>(value: T): T {
+    return value;
+}
+// "T" will be replaced by the type we specified
+
+test<string>("Hello World");
+test<number>(2022);
+test<boolean>(true);
+```
+
+-   **Type checking** <br>
+    _You can safely use type checking with the `typeof` operator to execute the appropriate logic_
+
+```ts
+function logger<T>(value: T): void {
+    if (typeof value == "string") {
+        // we are pretty sure that only strings will get here
+        console.log(value.toLocaleUpperCase());
+        // therefore, we can use string methods
+    } else if (typeof value == "number") {
+        console.log(value.toFixed(2));
+    } else {
+        console.log(`${value} has the ${typeof value} type`);
+    }
+}
+
+logger<string>("Hello World"); // "HELLO WORLD"
+logger<number>(2022); // 2022.00
+logger<boolean>(true); // "true has the boolean type"
+```
+
+-   **Multiple generics** <br>
+    _You can pass multiple generics, for example, to describe different input and output types in functions_
+
+```ts
+interface IService {
+    process: <T, S>(data: T) => S;
+}
+```
+
+-   **Extending generic type** <br>
+
+```ts
+interface IValue {
+    info: string;
+}
+
+function test<T extends IValue>(value: T): T {
+    console.log(value.info);
+    return value;
 }
 ```
