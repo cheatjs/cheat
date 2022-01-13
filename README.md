@@ -8,7 +8,7 @@ High quality cheatsheets for JavaScript environment
     -   [Array methods](#array-methods)
     -   [String methods](#string-methods)
 -   [Node.js](#node.js)
-    -   [TypeScript basics](#node.js-basics)
+    -   [Node.js basics](#nodejs-basics)
 -   [TypeScript](#typescript)
     -   [TypeScript basics](#typescript-basics)
 
