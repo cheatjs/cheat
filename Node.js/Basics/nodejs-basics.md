@@ -8,25 +8,25 @@ Node.js has a huge number of packages created by different developers that you c
 
 Basic console commands:
 
-_Create a `package.json` - configuration file that will describe the installed packages, scripts and application information:_
+-   _Create a `package.json` - configuration file that will describe the installed packages, scripts and application information:_
 
 ```sh
 npm init -y
 ```
 
-_Add package:_
+-   _Add package:_
 
 ```sh
 npm install package-name
 ```
 
-_Add package only for development:_
+-   _Add package only for development:_
 
 ```sh
 npm install -D package-name
 ```
 
-_Delete package:_
+-   _Delete package:_
 
 ```sh
 npm uninstall package-name
