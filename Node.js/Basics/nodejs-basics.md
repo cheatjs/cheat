@@ -34,7 +34,7 @@ npm uninstall package-name
 
 ## Run code
 
--   **Running code**
+-   **Running code** <br>
     _Use command `node` + path to file to run it_
 
 ```sh
@@ -42,7 +42,10 @@ node app.js
 ```
 
 -   **Running code with passing parameters**
-    `node app.js hello 123`
+
+```sh
+node app.js hello 123
+```
 
 ```js
 // app.js
@@ -55,7 +58,7 @@ const param1 = process.argv[2]; // hello
 const param2 = process.argv[3]; // 123
 ```
 
--   **Environment variables**
+-   **Environment variables** <br>
     _`dotenv` is needed to load environment variables from `.env` file_
 
 ```sh
@@ -78,7 +81,7 @@ console.log(process.env.TEST); // Hello from .env file
 
 ## Modules
 
--   **CommonJS**
+-   **CommonJS** <br>
     _Modular system created specifically for Node.js_
 
 ```js
@@ -97,7 +100,7 @@ console.log(message); // Hello Node.js!
 console.log(calcSum(2, 3)); // 5
 ```
 
--   **ES modules**
+-   **ES modules** <br>
     _A modular system added to JavaScript in 2015. To enable it in Node.js, add the option `”type”: "module"` to the `package.json`_
 
 ```js
@@ -188,10 +191,6 @@ fs.readFile("file.txt", (error, data) => {
     if (error) throw error;
     console.log(data.toString()); // Hello Node.js!!!
 });
-```
-
-```
-fs.open(path, flags, [mode], callback)
 ```
 
 ```js
