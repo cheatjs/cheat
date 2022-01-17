@@ -1,6 +1,13 @@
 # Objects cheatsheet
 
-## Table of content
+1. [Basic usage](#basic-usage)
+2. [References and copying](#references-and-copying)
+3. [Iterating objects](#iterating-objects)
+4. [Object methods & this](#object-methods--this)
+5. [Constructors](#constructors)
+6. [Property existance](#property-existance)
+7. [Flags & descriptors](#flags--descriptors)
+8. [Getters & setters](#getters--setters)
 
 ---
 
@@ -279,7 +286,7 @@ console.log(response?.message); // undefined
 
 ---
 
-## Property flags and descriptors
+## Flags & descriptors
 
 Object properties can store a special configuration flags in addition to the value.<br>
 
@@ -325,7 +332,7 @@ Object.defineProperty(person, "name", {
 
 ---
 
-## Getters and setters
+## Getters & setters
 
 Getters and setters called as accessor properties. They are essentially functions that execute on getting and setting a value, but look like regular properties to an external code.
 
