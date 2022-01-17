@@ -283,8 +283,8 @@ console.log(response?.message); // undefined
 
 Object properties can store a special configuration flags in addition to the value.<br>
 
-**`writable`** – if `true`, the value can be changed, otherwise it’s read-only.
-**`enumerable`** – if `true`, then listed in loops, otherwise not listed.
+**`writable`** – if `true`, the value can be changed, otherwise it’s read-only. <br>
+**`enumerable`** – if `true`, then listed in loops, otherwise not listed. <br>
 **`configurable`** – if `true`, the property can be deleted and these attributes can be modified, otherwise not.
 
 > All flags default to true
