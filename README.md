@@ -9,6 +9,7 @@ High quality cheatsheets for JavaScript environment
 -   [JavaScript](#javascript)
     -   [Array methods](#array-methods)
     -   [String methods](#string-methods)
+    -   [Objects](#objects)
 -   [Node.js](#nodejs)
     -   [Node.js basics](#nodejs-basics)
 -   [TypeScript](#typescript)
@@ -23,6 +24,10 @@ High quality cheatsheets for JavaScript environment
 ### String methods
 
 [![N|Solid](./JavaScript/String-methods/js-string-methods.png)](./JavaScript/String-methods/js-string-methods.png)
+
+### Objects
+
+[![N|Solid](./JavaScript/Objects/js-objects.png)](./JavaScript/Objects/js-objects.png)
 
 ## Node.js
 
