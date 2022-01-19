@@ -1,5 +1,12 @@
 # Classes cheatsheet
 
+1. [Basic usage](#basic-usage)
+2. [Сlass inheritance](#class-inheritance)
+3. [Getters & setters](#getters--setters)
+4. [Static methods & properties](#static-methods--properties)
+5. [Operator instanceof](#operator-instanceof)
+6. [Mixins](#mixins)
+
 ## Basic usage
 
 Classes provide a simpler, more intuitive way of creating objects and organising inheritance.
@@ -139,9 +146,9 @@ console.log(box.size); // 10
 
 ---
 
-## Static methods and properties
+## Static methods & properties
 
-Static methods and properties are called without creating an instance of their class.
+Static methods/properties are called without creating an instance of their class.
 
 ```js
 class Calc {
