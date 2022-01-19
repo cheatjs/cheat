@@ -2,6 +2,16 @@
 
 ## Table of content
 
+1. [Node package manager (NPM)](#node-package-manager-npm)
+2. [Run code](#run-code)
+3. [Modules](#modules)
+4. [Working with paths](#working-with-paths)
+5. [Working with files](#working-with-files)
+6. [System info](#system-info)
+7. [Events](#events)
+8. [Streams](#streams)
+9. [HTTP server](#http-server)
+
 ## Node package manager (NPM)
 
 Node.js has a huge number of packages created by different developers that you can easily import into your projects using `npm`.
