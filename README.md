@@ -28,30 +28,42 @@ JavaScript is an amazing and unique language. From a simple scripting add-on for
 
 ### Array methods
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/JavaScript/Array-methods/js-array-methods.png) &emsp; [Text version](./JavaScript/Array-methods/js-array-methods.md)
+<br><br>
 [![N|Solid](./JavaScript/Array-methods/js-array-methods.png)](./JavaScript/Array-methods/js-array-methods.png)
 
 ### String methods
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/JavaScript/String-methods/js-string-methods.png) &emsp; [Text version](./JavaScript/Array-methods/js-string-methods.md)
+<br><br>
 [![N|Solid](./JavaScript/String-methods/js-string-methods.png)](./JavaScript/String-methods/js-string-methods.png)
 
 ### Objects
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/JavaScript/Objects/js-objects.png) &emsp; [Text version](./JavaScript/Objects/js-objects.md)
+<br><br>
 [![N|Solid](./JavaScript/Objects/js-objects.png)](./JavaScript/Objects/js-objects.png)
 
 ### Classes
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/JavaScript/Classes/js-classes.png) &emsp; [Text version](./JavaScript/Classes/js-classes.md)
+<br><br>
 [![N|Solid](./JavaScript/Classes/js-classes.png)](./JavaScript/Classes/js-classes.png)
 
 ## Node.js
 
 ### Node.js basics
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/Node.js/Basics/nodejs-basics.png) &emsp; [Text version](./Node.js/Basics/nodejs-basics.md)
+<br><br>
 [![N|Solid](./Node.js/Basics/nodejs-basics.png)](./Node.js/Basics/nodejs-basics.png)
 
 ## TypeScript
 
 ### TypeScript basics
 
+[Download image](https://raw.githubusercontent.com/cheatjs/cheat/master/TypeScript/Basics/ts-basics.png) &emsp; [Text version](./TypeScript/Basics/ts-basics.md)
+<br><br>
 [![N|Solid](./TypeScript/Basics/ts-basics.png)](./TypeScript/Basics/ts-basics.png)
 
 ## :dart: Stay tuned
