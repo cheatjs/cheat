@@ -1,11 +1,11 @@
 # Classes cheatsheet
 
-1. [Basic usage](#basic-usage)
-2. [Сlass inheritance](#class-inheritance)
-3. [Getters & setters](#getters--setters)
-4. [Static methods & properties](#static-methods--properties)
-5. [Operator instanceof](#operator-instanceof)
-6. [Mixins](#mixins)
+1. [Basic usage](js-classes.md#basic-usage)
+2. [Сlass inheritance](js-classes.md#class-inheritance)
+3. [Getters & setters](js-classes.md#getters--setters)
+4. [Static methods & properties](js-classes.md#static-methods--properties)
+5. [Operator instanceof](js-classes.md#operator-instanceof)
+6. [Mixins](js-classes.md#mixins)
 
 ## Basic usage
 
@@ -43,12 +43,11 @@ const rectangle = new Element(20, 30);
 const square = new Element(25, 25);
 ```
 
----
+***
 
 ## Сlass inheritance
 
-For class inheritance is used the keyword `extends`,
-`super` is used to pass values to the parent constructor
+For class inheritance is used the keyword `extends`, `super` is used to pass values to the parent constructor
 
 ```js
 class Element {
@@ -115,7 +114,7 @@ logger.log();
 // process...
 ```
 
----
+***
 
 ## Getters & setters
 
@@ -144,7 +143,7 @@ box.area = 100;
 console.log(box.size); // 10
 ```
 
----
+***
 
 ## Static methods & properties
 
@@ -184,7 +183,7 @@ class Process extends Calc {}
 Process.sum(2, 3); // 5
 ```
 
----
+***
 
 ## Operator instanceof
 
@@ -209,7 +208,7 @@ const newProc = new Process();
 console.log(newProc.avg(3, 4)); // 3.5
 ```
 
----
+***
 
 ## Mixins
 
