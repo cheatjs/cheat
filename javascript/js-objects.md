@@ -1,15 +1,15 @@
 # Objects cheatsheet
 
-1. [Basic usage](#basic-usage)
-2. [References and copying](#references-and-copying)
-3. [Iterating objects](#iterating-objects)
-4. [Object methods & this](#object-methods--this)
-5. [Constructors](#constructors)
-6. [Property existance](#property-existance)
-7. [Flags & descriptors](#flags--descriptors)
-8. [Getters & setters](#getters--setters)
+1. [Basic usage](js-objects.md#basic-usage)
+2. [References and copying](js-objects.md#references-and-copying)
+3. [Iterating objects](js-objects.md#iterating-objects)
+4. [Object methods & this](js-objects.md#object-methods--this)
+5. [Constructors](js-objects.md#constructors)
+6. [Property existance](js-objects.md#property-existance)
+7. [Flags & descriptors](js-objects.md#flags--descriptors)
+8. [Getters & setters](js-objects.md#getters--setters)
 
----
+***
 
 ## Basic usage
 
@@ -29,7 +29,7 @@ app.license = "MIT"; // add new property
 delete app.version; // delete property
 ```
 
--   **Multiword property name**
+* **Multiword property name**
 
 ```js
 const game = {
@@ -43,7 +43,7 @@ const isFree = "is free";
 alert(game[isFree]); // true
 ```
 
--   **Computed property**
+* **Computed property**
 
 ```js
 let prop = "yEaR";
@@ -56,7 +56,7 @@ const list = {
 alert(list.year); // 2022
 ```
 
--   **Property value shorthand**
+* **Property value shorthand**
 
 ```js
 function createUser(login, id) {
@@ -67,12 +67,12 @@ function createUser(login, id) {
 }
 ```
 
----
+***
 
 ## References and copying
 
--   **Copying objects** <br>
-    _When copied, the new object will be a reference to the original object, unlike regular variables, which create independent entities when copied_
+* **Copying objects**\
+  _When copied, the new object will be a reference to the original object, unlike regular variables, which create independent entities when copied_
 
 ```js
 const original = {
@@ -90,8 +90,8 @@ copy.name = "new copy"; // it also changes original
 alert(original.name); // new copy
 ```
 
--   **Object comparison** <br>
-    _The comparison operators `==` and `===` work the same for objects_
+* **Object comparison**\
+  _The comparison operators `==` and `===` work the same for objects_
 
 ```js
 // Two variables refer to the same object
@@ -109,8 +109,8 @@ const otherOriginal = {};
 alert(original == otherOriginal); // false
 ```
 
--   **Cloning objects** <br>
-    _`Object.assign(target, ...sources)` - copies all enumerable own properties from one or more source objects to a target object._
+* **Cloning objects**\
+  _`Object.assign(target, ...sources)` - copies all enumerable own properties from one or more source objects to a target object._
 
 ```js
 const item = {
@@ -126,11 +126,11 @@ alert(newItem.color); // gray
 alert(item.color); // black
 ```
 
----
+***
 
 ## Iterating objects
 
--   Loop **for...in**
+* Loop **for...in**
 
 ```js
 const item = {
@@ -145,36 +145,36 @@ for (key in item) {
 }
 ```
 
--   **Object.keys**(object) <br>
-    _Returns an array of keys of the passed object_
+* **Object.keys**(object)\
+  _Returns an array of keys of the passed object_
 
 ```js
 console.log(Object.keys(item));
 // [name, price]
 ```
 
--   **Object.values**(object) <br>
-    _Returns an array of values of the passed object_
+* **Object.values**(object)\
+  _Returns an array of values of the passed object_
 
 ```js
 console.log(Object.values(item));
 // ["Pizza", 29]
 ```
 
--   **Object.entries**(object) <br>
-    _Returns an array of the [key, value] pairs of the passed object_
+* **Object.entries**(object)\
+  _Returns an array of the \[key, value] pairs of the passed object_
 
 ```js
 console.log(Object.entries(item));
 // [["name", "Pizza"], ["price", 29]]
 ```
 
----
+***
 
 ## Object methods & this
 
--   **Object methods** <br>
-    _In addition to values, objects can have methods that perform various actions_
+* **Object methods**\
+  _In addition to values, objects can have methods that perform various actions_
 
 ```js
 const greetings = {
@@ -192,8 +192,8 @@ const greetings = {
 greetings.hiDay(); // Good afternoon!
 ```
 
--   **this** <br>
-    _`this` allows to refer to variables and methods that are stored in the same object_
+* **this**\
+  _`this` allows to refer to variables and methods that are stored in the same object_
 
 ```js
 const counter = {
@@ -224,12 +224,12 @@ const obj = {
 obj.log(); // { value: 'hello', log: [Function] }
 ```
 
----
+***
 
 ## Constructors
 
--   **Constructor functions** <br>
-    _Constructor functions are used to easily create objects. They are normal functions, but developers have agreed that such functions are capitalised and called with `new` operator._
+* **Constructor functions**\
+  _Constructor functions are used to easily create objects. They are normal functions, but developers have agreed that such functions are capitalised and called with `new` operator._
 
 ```js
 function Animal(type, color) {
@@ -242,7 +242,7 @@ alert(kitten.type); // cat
 alert(kitten.color); // black
 ```
 
--   **Methods in constructors**
+* **Methods in constructors**
 
 ```js
 function Parrot(name) {
@@ -256,11 +256,11 @@ const blueParrot = new Parrot("Mojo");
 blueParrot.greet(); // Hello, my name is Mojo
 ```
 
----
+***
 
 ## Property existance
 
--   **Checking property existence**
+* **Checking property existence**
 
 ```js
 const response = {
@@ -272,8 +272,8 @@ console.log("data" in response); // true
 console.log("message" in response); // false
 ```
 
--   **Optional chaining** <br>
-    _Is a safe way to access nested object properties, even if an intermediate property doesn’t exist_
+* **Optional chaining**\
+  _Is a safe way to access nested object properties, even if an intermediate property doesn’t exist_
 
 ```js
 const response = {
@@ -284,20 +284,21 @@ console.log(response?.data); // some data
 console.log(response?.message); // undefined
 ```
 
----
+***
 
 ## Flags & descriptors
 
-Object properties can store a special configuration flags in addition to the value.<br>
+Object properties can store a special configuration flags in addition to the value.\
 
-**`writable`** – if `true`, the value can be changed, otherwise it’s read-only. <br>
-**`enumerable`** – if `true`, then listed in loops, otherwise not listed. <br>
+
+**`writable`** – if `true`, the value can be changed, otherwise it’s read-only.\
+**`enumerable`** – if `true`, then listed in loops, otherwise not listed.\
 **`configurable`** – if `true`, the property can be deleted and these attributes can be modified, otherwise not.
 
 > All flags default to true
 
--   Object.**getOwnPropertyDescriptor**(obj, property) <br>
-    _Allows to query the full information about a property_
+* Object.**getOwnPropertyDescriptor**(obj, property)\
+  _Allows to query the full information about a property_
 
 ```js
 const person = {
@@ -316,8 +317,8 @@ console.log(descriptor);
 // }
 ```
 
--   Object.**defineProperty**(obj, property, descriptor) <br>
-    _Change the flags of the specified property_
+* Object.**defineProperty**(obj, property, descriptor)\
+  _Change the flags of the specified property_
 
 ```js
 Object.defineProperty(person, "name", {
@@ -325,19 +326,19 @@ Object.defineProperty(person, "name", {
 });
 ```
 
--   Object.**defineProperties**(obj, {prop: descr, ...}) <br>
-    _Allows to define many properties at once_
--   Object.**getOwnPropertyDescriptors**(obj) <br>
-    _Get all property descriptors at once_
+* Object.**defineProperties**(obj, {prop: descr, ...})\
+  _Allows to define many properties at once_
+* Object.**getOwnPropertyDescriptors**(obj)\
+  _Get all property descriptors at once_
 
----
+***
 
 ## Getters & setters
 
 Getters and setters called as accessor properties. They are essentially functions that execute on getting and setting a value, but look like regular properties to an external code.
 
--   **Usage** <br>
-    _The `get` keyword is used to create the getter, for the setter - `set`_
+* **Usage**\
+  _The `get` keyword is used to create the getter, for the setter - `set`_
 
 ```js
 const person = {
@@ -358,8 +359,8 @@ console.log(person)
 // {fullName: "Jack Ma", name: "Jack", surname: "Ma"}
 ```
 
--   **Accessor descriptors** <br>
-    _For accessor properties, there is no `value` or `writable`, but instead there are `get` and `set` functions_
+* **Accessor descriptors**\
+  _For accessor properties, there is no `value` or `writable`, but instead there are `get` and `set` functions_
 
 ```js
 Object.defineProperty(person, "sayHello", {
