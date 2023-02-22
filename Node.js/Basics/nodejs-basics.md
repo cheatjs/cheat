@@ -1,16 +1,6 @@
 # Node.js basics cheatsheet
 
-## Table of content
-
-1. [Node package manager (NPM)](nodejs-basics.md#node-package-manager-npm)
-2. [Run code](nodejs-basics.md#run-code)
-3. [Modules](nodejs-basics.md#modules)
-4. [Working with paths](nodejs-basics.md#working-with-paths)
-5. [Working with files](nodejs-basics.md#working-with-files)
-6. [System info](nodejs-basics.md#system-info)
-7. [Events](nodejs-basics.md#events)
-8. [Streams](nodejs-basics.md#streams)
-9. [HTTP server](nodejs-basics.md#http-server)
+[Download image version](nodejs-basics.png)
 
 ## Node package manager (NPM)
 
@@ -18,25 +8,25 @@ Node.js has a huge number of packages created by different developers that you c
 
 Basic console commands:
 
-* _Create a `package.json` - configuration file that will describe the installed packages, scripts and application information:_
+-   _Create a `package.json` - configuration file that will describe the installed packages, scripts and application information:_
 
 ```sh
 npm init -y
 ```
 
-* _Add package:_
+-   _Add package:_
 
 ```sh
 npm install package-name
 ```
 
-* _Add package only for development:_
+-   _Add package only for development:_
 
 ```sh
 npm install -D package-name
 ```
 
-* _Delete package:_
+-   _Delete package:_
 
 ```sh
 npm uninstall package-name
@@ -44,14 +34,14 @@ npm uninstall package-name
 
 ## Run code
 
-* **Running code**\
-  _Use command `node` + path to file to run it_
+-   **Running code**\
+    _Use command `node` + path to file to run it_
 
 ```sh
 node app.js
 ```
 
-* **Running code with passing parameters**
+-   **Running code with passing parameters**
 
 ```sh
 node app.js hello 123
@@ -68,8 +58,8 @@ const param1 = process.argv[2]; // hello
 const param2 = process.argv[3]; // 123
 ```
 
-* **Environment variables**\
-  _`dotenv` is needed to load environment variables from `.env` file_
+-   **Environment variables**\
+    _`dotenv` is needed to load environment variables from `.env` file_
 
 ```sh
 node install dotenv
@@ -91,8 +81,8 @@ console.log(process.env.TEST); // Hello from .env file
 
 ## Modules
 
-* **CommonJS**\
-  _Modular system created specifically for Node.js_
+-   **CommonJS**\
+    _Modular system created specifically for Node.js_
 
 ```js
 // module.js
@@ -110,8 +100,8 @@ console.log(message); // Hello Node.js!
 console.log(calcSum(2, 3)); // 5
 ```
 
-* **ES modules**\
-  _A modular system added to JavaScript in 2015. To enable it in Node.js, add the option `”type”: "module"` to the `package.json`_
+-   **ES modules**\
+    _A modular system added to JavaScript in 2015. To enable it in Node.js, add the option `”type”: "module"` to the `package.json`_
 
 ```js
 // module.js
@@ -164,7 +154,7 @@ path.extname("/home/user/project/app.js"); // .js
 
 Node.js has a built-in fs module for working with files
 
-* **Create/delete folders**
+-   **Create/delete folders**
 
 ```js
 const fs = require("fs");
@@ -179,7 +169,7 @@ fs.mkdir(path.resolve(__dirname, "dir"), (err) => {
 fs.rmdir(path.resolve(__dirname, "dir"));
 ```
 
-* **Create/read/update/delete files**
+-   **Create/read/update/delete files**
 
 ```js
 // Write data to a new file or overwrite an existing file
@@ -292,7 +282,7 @@ wStream.end(); // close stream
 
 Server operations are the main application area fo Node.js
 
-* **Basic http server**
+-   **Basic http server**
 
 ```js
 const http = require("http");
